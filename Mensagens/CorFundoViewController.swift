@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CorFundoViewController: UIViewController {
+class CorFundoViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

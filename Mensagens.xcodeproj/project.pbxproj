@@ -16,6 +16,7 @@
 		AC719E812616B5FD0085E1C9 /* CorFundoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719E802616B5FD0085E1C9 /* CorFundoViewController.swift */; };
 		AC719E842616B67B0085E1C9 /* CorDaBordaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719E832616B67B0085E1C9 /* CorDaBordaViewController.swift */; };
 		AC719E872616B81F0085E1C9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719E862616B81F0085E1C9 /* ResultViewController.swift */; };
+		AC719E8A2616B86D0085E1C9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719E892616B86D0085E1C9 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AC719E802616B5FD0085E1C9 /* CorFundoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorFundoViewController.swift; sourceTree = "<group>"; };
 		AC719E832616B67B0085E1C9 /* CorDaBordaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorDaBordaViewController.swift; sourceTree = "<group>"; };
 		AC719E862616B81F0085E1C9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		AC719E892616B86D0085E1C9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +66,12 @@
 			children = (
 				AC719E692616B0460085E1C9 /* AppDelegate.swift */,
 				AC719E6B2616B0460085E1C9 /* SceneDelegate.swift */,
+				AC719E892616B86D0085E1C9 /* BaseViewController.swift */,
 				AC719E6D2616B0460085E1C9 /* CorTextoViewController.swift */,
+				AC719E802616B5FD0085E1C9 /* CorFundoViewController.swift */,
+				AC719E832616B67B0085E1C9 /* CorDaBordaViewController.swift */,
 				AC719E6F2616B0460085E1C9 /* Main.storyboard */,
 				AC719E862616B81F0085E1C9 /* ResultViewController.swift */,
-				AC719E832616B67B0085E1C9 /* CorDaBordaViewController.swift */,
-				AC719E802616B5FD0085E1C9 /* CorFundoViewController.swift */,
 				AC719E722616B0470085E1C9 /* Assets.xcassets */,
 				AC719E742616B0470085E1C9 /* LaunchScreen.storyboard */,
 				AC719E772616B0470085E1C9 /* Info.plist */,
@@ -151,6 +154,7 @@
 				AC719E812616B5FD0085E1C9 /* CorFundoViewController.swift in Sources */,
 				AC719E842616B67B0085E1C9 /* CorDaBordaViewController.swift in Sources */,
 				AC719E6C2616B0460085E1C9 /* SceneDelegate.swift in Sources */,
+				AC719E8A2616B86D0085E1C9 /* BaseViewController.swift in Sources */,
 				AC719E872616B81F0085E1C9 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

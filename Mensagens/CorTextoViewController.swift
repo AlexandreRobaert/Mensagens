@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CorTextoViewController: UIViewController {
+class CorTextoViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

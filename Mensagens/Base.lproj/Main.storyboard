@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Cor Texto View Controller-->
+        <!--Cor do Texto-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CorTextoViewController" customModule="Mensagens" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,6 +19,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rZ-yT-eI8">
                                 <rect key="frame" x="140.5" y="583" width="133" height="30"/>
                                 <state key="normal" title="Mudar Cor do texto"/>
+                                <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tim-AH-s7p"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Coloque o texto aqui" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v7m-Iq-btJ">
                                 <rect key="frame" x="83" y="138" width="248" height="248.5"/>
@@ -41,13 +44,22 @@
                             <constraint firstItem="v7m-Iq-btJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="kzx-Mj-zQb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="PDd-pz-61s"/>
+                    <navigationItem key="navigationItem" title="Cor do Texto" id="PDd-pz-61s">
+                        <barButtonItem key="rightBarButtonItem" title="Próximo" id="jbN-Ds-Oq9">
+                            <connections>
+                                <segue destination="rAU-5s-kE1" kind="show" id="8O1-zd-xf9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tfMensagem" destination="v7m-Iq-btJ" id="VYU-PO-DMr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="850.72463768115949" y="113.83928571428571"/>
         </scene>
-        <!--Cor Fundo View Controller-->
+        <!--Cor do Fundo-->
         <scene sceneID="0ty-Y4-KTo">
             <objects>
                 <viewController id="rAU-5s-kE1" customClass="CorFundoViewController" customModule="Mensagens" customModuleProvider="target" sceneMemberID="viewController">
@@ -56,7 +68,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Coloque o texto aqui" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bie-Z5-kNy">
-                                <rect key="frame" x="83" y="94" width="248" height="248.5"/>
+                                <rect key="frame" x="83" y="138" width="248" height="248.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Bie-Z5-kNy" secondAttribute="height" id="Ph8-t9-E43"/>
@@ -68,6 +80,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTi-p9-AZr">
                                 <rect key="frame" x="138" y="583" width="138" height="30"/>
                                 <state key="normal" title="Mudar Cor do fundo"/>
+                                <connections>
+                                    <action selector="changeColor:" destination="rAU-5s-kE1" eventType="touchUpInside" id="Ncw-gI-oDt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wYG-vI-7mY"/>
@@ -80,12 +95,22 @@
                             <constraint firstItem="oTi-p9-AZr" firstAttribute="centerX" secondItem="GEY-Ik-dtL" secondAttribute="centerX" id="z6y-MD-CqY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Cor do Fundo" id="Sz4-g6-9wW">
+                        <barButtonItem key="rightBarButtonItem" title="Próximo" id="hXD-ee-MLm">
+                            <connections>
+                                <segue destination="JkK-49-mwO" kind="show" id="Yal-Zr-b5T"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tfMensagem" destination="Bie-Z5-kNy" id="EaL-q9-0Bu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSX-G8-HkE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1555" y="114"/>
         </scene>
-        <!--Cor Da Borda View Controller-->
+        <!--Cor da Borda-->
         <scene sceneID="5rw-Na-rze">
             <objects>
                 <viewController id="JkK-49-mwO" customClass="CorDaBordaViewController" customModule="Mensagens" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,7 +119,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Coloque o texto aqui" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ojm-35-ci1">
-                                <rect key="frame" x="83" y="94" width="248" height="248.5"/>
+                                <rect key="frame" x="83" y="138" width="248" height="248.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ojm-35-ci1" secondAttribute="height" id="GPa-dA-Fl4"/>
@@ -107,6 +132,9 @@
                                 <rect key="frame" x="138" y="599" width="138" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mudar Cor da borda"/>
+                                <connections>
+                                    <action selector="changeColor:" destination="JkK-49-mwO" eventType="touchUpInside" id="Ldb-Cr-rl3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mvd-6o-YxC"/>
@@ -117,6 +145,16 @@
                             <constraint firstItem="Ojm-35-ci1" firstAttribute="centerX" secondItem="drk-Iq-2Ia" secondAttribute="centerX" id="kph-2Z-hZ9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Cor da Borda" id="12Z-YZ-YXa">
+                        <barButtonItem key="rightBarButtonItem" title="Concluído" id="vda-ef-km9">
+                            <connections>
+                                <segue destination="USY-pa-esj" kind="presentation" id="WJ6-Lm-BJ5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tfMensagem" destination="Ojm-35-ci1" id="aWZ-TB-iJg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Xr-Z8-jZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,11 +165,11 @@
             <objects>
                 <viewController id="USY-pa-esj" customClass="ResultViewController" customModule="Mensagens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Obl-vq-6Xs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRX-zb-PNb" userLabel="View Borda">
-                                <rect key="frame" x="41.5" y="282.5" width="331" height="331"/>
+                                <rect key="frame" x="41.5" y="255.5" width="331" height="331"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Texto do usuário" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-Ai-KhP">
                                         <rect key="frame" x="20" y="20" width="291" height="291"/>
