@@ -13,5 +13,11 @@ class CorTextoViewController: BaseViewController {
         super.viewDidLoad()
         
     }
+    
+    override func changeColor(_ sender: UIButton) {
+        tfMensagem.backgroundColor = .green
+        let vc = ColorPickerViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
