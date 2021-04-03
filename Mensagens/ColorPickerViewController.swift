@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ColorPickerDelegate {
+protocol ColorPickerDelegate: class {
     func applyColor(_ color: UIColor)
 }
 
@@ -18,7 +18,7 @@ class ColorPickerViewController: UIViewController {
     @IBOutlet weak var sliderVerde: UISlider!
     @IBOutlet weak var sliderAzul: UISlider!
     
-    var delegate: ColorPickerDelegate?
+    weak var delegate: ColorPickerDelegate?
 
     @IBAction func escolherCor(_ sender: Any) {
         delegate?.applyColor(viewColorBackground.backgroundColor!)
