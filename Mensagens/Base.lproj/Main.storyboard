@@ -44,7 +44,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui sua mensagem" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1I-eN-aL3">
                                 <rect key="frame" x="16" y="64" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -95,15 +95,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SpJ-Pd-gVM">
                                 <rect key="frame" x="47" y="59" width="281" height="281.5"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Coloque o texto aqui" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Owz-xR-NyU">
-                                        <rect key="frame" x="15" y="15" width="251" height="251"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Coloque o texto aqui" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Owz-xR-NyU">
+                                        <rect key="frame" x="15" y="15" width="251" height="251.5"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Owz-xR-NyU" firstAttribute="leading" secondItem="SpJ-Pd-gVM" secondAttribute="leading" constant="15" id="25t-ib-9HM"/>
+                                    <constraint firstAttribute="bottom" secondItem="Owz-xR-NyU" secondAttribute="bottom" constant="15" id="HfZ-VK-RaB"/>
+                                    <constraint firstAttribute="trailing" secondItem="Owz-xR-NyU" secondAttribute="trailing" constant="15" id="Nqs-Q4-Kve"/>
+                                    <constraint firstItem="Owz-xR-NyU" firstAttribute="top" secondItem="SpJ-Pd-gVM" secondAttribute="top" constant="15" id="Or6-UR-K9N"/>
                                     <constraint firstAttribute="width" secondItem="SpJ-Pd-gVM" secondAttribute="height" multiplier="1:1" id="wGy-01-bPA"/>
                                 </constraints>
                             </view>
@@ -132,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSX-G8-HkE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1555" y="114"/>
+            <point key="canvasLocation" x="1554.4000000000001" y="113.79310344827587"/>
         </scene>
         <!--Color Picker View Controller-->
         <scene sceneID="G99-JR-lvb">
@@ -231,16 +234,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zaa-xf-qTG">
                                 <rect key="frame" x="47" y="59" width="281" height="281.5"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Coloque o texto aqui" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yFr-9q-yEB">
-                                        <rect key="frame" x="15" y="15" width="251" height="251"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Coloque o texto aqui" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yFr-9q-yEB">
+                                        <rect key="frame" x="15" y="15" width="251" height="251.5"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yFr-9q-yEB" secondAttribute="trailing" constant="15" id="1Ky-Vb-7Wt"/>
+                                    <constraint firstAttribute="bottom" secondItem="yFr-9q-yEB" secondAttribute="bottom" constant="15" id="3GF-RA-NrB"/>
+                                    <constraint firstItem="yFr-9q-yEB" firstAttribute="top" secondItem="zaa-xf-qTG" secondAttribute="top" constant="15" id="k2t-Fh-3R0"/>
                                     <constraint firstAttribute="width" secondItem="zaa-xf-qTG" secondAttribute="height" multiplier="1:1" id="lxh-7y-6hU"/>
+                                    <constraint firstItem="yFr-9q-yEB" firstAttribute="leading" secondItem="zaa-xf-qTG" secondAttribute="leading" constant="15" id="pSB-i0-psZ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKy-RA-IdI">

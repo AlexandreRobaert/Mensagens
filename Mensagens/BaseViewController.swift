@@ -11,13 +11,11 @@ class BaseViewController: UIViewController {
     
     @IBOutlet weak var tfMensagem: UITextView!
     @IBOutlet weak var viewBorder: UIView!
-    var mensagem: Mensagem?
-    var colorPicker: ColorPickerViewController!
+    var mensagem = Mensagem()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        colorPicker = storyboard?.instantiateViewController(identifier: "ColorPickerViewController") as? ColorPickerViewController
-        configViews()
+        loadViews()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -25,22 +23,26 @@ class BaseViewController: UIViewController {
         vc.mensagem = self.mensagem
     }
     
-    func configViews() {
-        if let texto = mensagem?.texto {
+    func loadViews() {
+        if let texto = mensagem.texto {
             tfMensagem.text = texto
         }
-        if let cor = mensagem?.corDoTexto {
+        if let cor = mensagem.corDoTexto {
             tfMensagem.textColor = cor
         }
-        if let cor = mensagem?.backgroudColor {
+        if let cor = mensagem.backgroudColor {
             tfMensagem.backgroundColor = cor
         }
-        if let cor = mensagem?.borderColor {
+        if let cor = mensagem.borderColor {
             viewBorder.backgroundColor = cor
         }
     }
     
     @IBAction func changeColor (_ sender: UIButton) {
-        present(colorPicker, animated: true, completion: nil)
+        let colorPicker = storyboard?.instantiateViewController(identifier: "ColorPickerViewController") as! ColorPickerViewController
+        if let delegate = self as? ColorPickerDelegate {
+            colorPicker.delegate = delegate
+            present(colorPicker, animated: true, completion: nil)
+        }
     }
 }

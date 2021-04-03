@@ -14,13 +14,11 @@ class CorTextoViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tfTexto.delegate = self
-        colorPicker.delegate = self
-        self.mensagem = Mensagem()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        configViews()
+        loadViews()
     }
     
     override func changeColor(_ sender: UIButton) {
@@ -31,9 +29,9 @@ class CorTextoViewController: BaseViewController {
 extension CorTextoViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        mensagem?.texto = textField.text
+        mensagem.texto = textField.text
         tfTexto.resignFirstResponder()
-        configViews()
+        loadViews()
         return true
     }
 }
@@ -41,6 +39,6 @@ extension CorTextoViewController: UITextFieldDelegate {
 extension CorTextoViewController: ColorPickerDelegate {
     func applyColor(_ color: UIColor) {
         tfMensagem.textColor = color
-        mensagem?.corDoTexto = color
+        mensagem.corDoTexto = color
     }
 }

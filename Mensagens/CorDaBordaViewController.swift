@@ -13,15 +13,15 @@ class CorDaBordaViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        colorPicker.delegate = self
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        configViews()
+        loadViews()
     }
 
     @IBAction func ocultarBorda(_ sender: UISwitch) {
-        viewBorder.backgroundColor = sender.isOn ? mensagem?.borderColor : .clear
+        viewBorder.backgroundColor = sender.isOn ? mensagem.borderColor : .clear
         isHiddenBorder = !sender.isOn
     }
     
@@ -35,6 +35,6 @@ class CorDaBordaViewController: BaseViewController {
 extension CorDaBordaViewController: ColorPickerDelegate {
     func applyColor(_ color: UIColor) {
         viewBorder.backgroundColor = color
-        mensagem?.borderColor = color
+        mensagem.borderColor = color
     }
 }
