@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ColorPickerDelegate {
+    func applyColor(_ color: UIColor)
+}
+
 class ColorPickerViewController: UIViewController {
 
     @IBOutlet weak var viewColorBackground: UIView!
@@ -14,16 +18,14 @@ class ColorPickerViewController: UIViewController {
     @IBOutlet weak var sliderVerde: UISlider!
     @IBOutlet weak var sliderAzul: UISlider!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        dismiss(animated: true, completion: nil)
-    }
+    var delegate: ColorPickerDelegate?
 
     @IBAction func escolherCor(_ sender: Any) {
-        
+        delegate?.applyColor(viewColorBackground.backgroundColor!)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func mudouACor(_ sender: UISlider) {
+        viewColorBackground.backgroundColor = UIColor(red: CGFloat(sliderVermelho.value), green: CGFloat(sliderVerde.value), blue: CGFloat(sliderAzul.value), alpha: 1)
     }
 }

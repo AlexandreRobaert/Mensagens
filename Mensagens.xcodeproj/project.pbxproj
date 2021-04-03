@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC6DFC4D2617933C0068CC23 /* Mensagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6DFC4C2617933C0068CC23 /* Mensagem.swift */; };
 		AC719E6A2616B0460085E1C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719E692616B0460085E1C9 /* AppDelegate.swift */; };
 		AC719E6C2616B0460085E1C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719E6B2616B0460085E1C9 /* SceneDelegate.swift */; };
 		AC719E6E2616B0460085E1C9 /* CorTextoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719E6D2616B0460085E1C9 /* CorTextoViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC6DFC4C2617933C0068CC23 /* Mensagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensagem.swift; sourceTree = "<group>"; };
 		AC719E662616B0460085E1C9 /* Mensagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mensagens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC719E692616B0460085E1C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC719E6B2616B0460085E1C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,13 +70,14 @@
 			children = (
 				AC719E692616B0460085E1C9 /* AppDelegate.swift */,
 				AC719E6B2616B0460085E1C9 /* SceneDelegate.swift */,
+				AC6DFC4C2617933C0068CC23 /* Mensagem.swift */,
 				AC719E892616B86D0085E1C9 /* BaseViewController.swift */,
 				AC719E6D2616B0460085E1C9 /* CorTextoViewController.swift */,
 				AC719E802616B5FD0085E1C9 /* CorFundoViewController.swift */,
 				AC719E832616B67B0085E1C9 /* CorDaBordaViewController.swift */,
+				AC719E862616B81F0085E1C9 /* ResultViewController.swift */,
 				AC719E8D2616BC4E0085E1C9 /* ColorPickerViewController.swift */,
 				AC719E6F2616B0460085E1C9 /* Main.storyboard */,
-				AC719E862616B81F0085E1C9 /* ResultViewController.swift */,
 				AC719E722616B0470085E1C9 /* Assets.xcassets */,
 				AC719E742616B0470085E1C9 /* LaunchScreen.storyboard */,
 				AC719E772616B0470085E1C9 /* Info.plist */,
@@ -160,6 +163,7 @@
 				AC719E8A2616B86D0085E1C9 /* BaseViewController.swift in Sources */,
 				AC719E8E2616BC4E0085E1C9 /* ColorPickerViewController.swift in Sources */,
 				AC719E872616B81F0085E1C9 /* ResultViewController.swift in Sources */,
+				AC6DFC4D2617933C0068CC23 /* Mensagem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,8 +11,19 @@ class CorFundoViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        colorPicker.delegate = self
+        configViews()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        configViews()
+    }
+}
 
+extension CorFundoViewController: ColorPickerDelegate {
+    func applyColor(_ color: UIColor) {
+        tfMensagem.backgroundColor = color
+        mensagem?.backgroudColor = color
+    }
 }
