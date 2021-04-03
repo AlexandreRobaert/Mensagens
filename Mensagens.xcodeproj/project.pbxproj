@@ -15,7 +15,7 @@
 		AC719E732616B0470085E1C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC719E722616B0470085E1C9 /* Assets.xcassets */; };
 		AC719E762616B0470085E1C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC719E742616B0470085E1C9 /* LaunchScreen.storyboard */; };
 		AC719E812616B5FD0085E1C9 /* CorFundoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719E802616B5FD0085E1C9 /* CorFundoViewController.swift */; };
-		AC719E842616B67B0085E1C9 /* CorDaBordaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719E832616B67B0085E1C9 /* CorDaBordaViewController.swift */; };
+		AC719E842616B67B0085E1C9 /* CorBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719E832616B67B0085E1C9 /* CorBackgroundViewController.swift */; };
 		AC719E872616B81F0085E1C9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719E862616B81F0085E1C9 /* ResultViewController.swift */; };
 		AC719E8A2616B86D0085E1C9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719E892616B86D0085E1C9 /* BaseViewController.swift */; };
 		AC719E8E2616BC4E0085E1C9 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC719E8D2616BC4E0085E1C9 /* ColorPickerViewController.swift */; };
@@ -32,7 +32,7 @@
 		AC719E752616B0470085E1C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC719E772616B0470085E1C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC719E802616B5FD0085E1C9 /* CorFundoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorFundoViewController.swift; sourceTree = "<group>"; };
-		AC719E832616B67B0085E1C9 /* CorDaBordaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorDaBordaViewController.swift; sourceTree = "<group>"; };
+		AC719E832616B67B0085E1C9 /* CorBackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorBackgroundViewController.swift; sourceTree = "<group>"; };
 		AC719E862616B81F0085E1C9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		AC719E892616B86D0085E1C9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AC719E8D2616BC4E0085E1C9 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 				AC719E892616B86D0085E1C9 /* BaseViewController.swift */,
 				AC719E6D2616B0460085E1C9 /* CorTextoViewController.swift */,
 				AC719E802616B5FD0085E1C9 /* CorFundoViewController.swift */,
-				AC719E832616B67B0085E1C9 /* CorDaBordaViewController.swift */,
+				AC719E832616B67B0085E1C9 /* CorBackgroundViewController.swift */,
 				AC719E862616B81F0085E1C9 /* ResultViewController.swift */,
 				AC719E8D2616BC4E0085E1C9 /* ColorPickerViewController.swift */,
 				AC719E6F2616B0460085E1C9 /* Main.storyboard */,
@@ -158,7 +158,7 @@
 				AC719E6E2616B0460085E1C9 /* CorTextoViewController.swift in Sources */,
 				AC719E6A2616B0460085E1C9 /* AppDelegate.swift in Sources */,
 				AC719E812616B5FD0085E1C9 /* CorFundoViewController.swift in Sources */,
-				AC719E842616B67B0085E1C9 /* CorDaBordaViewController.swift in Sources */,
+				AC719E842616B67B0085E1C9 /* CorBackgroundViewController.swift in Sources */,
 				AC719E6C2616B0460085E1C9 /* SceneDelegate.swift in Sources */,
 				AC719E8A2616B86D0085E1C9 /* BaseViewController.swift in Sources */,
 				AC719E8E2616BC4E0085E1C9 /* ColorPickerViewController.swift in Sources */,

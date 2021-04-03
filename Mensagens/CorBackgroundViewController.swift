@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CorDaBordaViewController: BaseViewController {
+class CorBackgroundViewController: BaseViewController {
     
     private var isHiddenBorder = false
     
@@ -21,7 +21,7 @@ class CorDaBordaViewController: BaseViewController {
     }
 
     @IBAction func ocultarBorda(_ sender: UISwitch) {
-        viewBorder.backgroundColor = sender.isOn ? mensagem.borderColor : .clear
+        viewBorder.backgroundColor = sender.isOn ? .white : .clear
         isHiddenBorder = !sender.isOn
     }
     
@@ -32,9 +32,9 @@ class CorDaBordaViewController: BaseViewController {
     }
 }
 
-extension CorDaBordaViewController: ColorPickerDelegate {
+extension CorBackgroundViewController: ColorPickerDelegate {
     func applyColor(_ color: UIColor) {
-        viewBorder.backgroundColor = color
-        mensagem.borderColor = color
+        view.backgroundColor = color
+        mensagem.viewColorBackground = color
     }
 }

@@ -11,5 +11,5 @@ struct Mensagem {
     var texto: String?
     var corDoTexto: UIColor?
     var backgroudColor: UIColor?
-    var borderColor: UIColor?
+    var viewColorBackground: UIColor?
 }

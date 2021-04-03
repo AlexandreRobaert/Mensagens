@@ -223,10 +223,10 @@
             </objects>
             <point key="canvasLocation" x="3600.0000000000005" y="113.83928571428571"/>
         </scene>
-        <!--Cor da Borda-->
+        <!--Cor do background-->
         <scene sceneID="5rw-Na-rze">
             <objects>
-                <viewController id="JkK-49-mwO" customClass="CorDaBordaViewController" customModule="Mensagens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JkK-49-mwO" customClass="CorBackgroundViewController" customModule="Mensagens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="drk-Iq-2Ia">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,6 +241,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="yFr-9q-yEB" secondAttribute="trailing" constant="15" id="1Ky-Vb-7Wt"/>
                                     <constraint firstAttribute="bottom" secondItem="yFr-9q-yEB" secondAttribute="bottom" constant="15" id="3GF-RA-NrB"/>
@@ -253,8 +254,8 @@
                                 <rect key="frame" x="0.0" y="556" width="375" height="111"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcP-yI-YPE">
-                                        <rect key="frame" x="118.5" y="8" width="138" height="30"/>
-                                        <state key="normal" title="Mudar Cor da borda"/>
+                                        <rect key="frame" x="119.5" y="8" width="136" height="30"/>
+                                        <state key="normal" title="Mudar cor do fundo"/>
                                         <connections>
                                             <action selector="changeColor:" destination="JkK-49-mwO" eventType="touchUpInside" id="Ldb-Cr-rl3"/>
                                         </connections>
@@ -295,7 +296,7 @@
                             <constraint firstItem="zaa-xf-qTG" firstAttribute="top" secondItem="Mvd-6o-YxC" secondAttribute="top" constant="15" id="qbP-5S-s6J"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Cor da Borda" id="12Z-YZ-YXa">
+                    <navigationItem key="navigationItem" title="Cor do background" id="12Z-YZ-YXa">
                         <barButtonItem key="rightBarButtonItem" title="Concluído" id="vda-ef-km9">
                             <connections>
                                 <segue destination="USY-pa-esj" kind="presentation" id="WJ6-Lm-BJ5"/>

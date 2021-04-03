@@ -13,6 +13,6 @@ class ResultViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewBorder.backgroundColor = isHiddenBorder ? .clear : mensagem.borderColor
+        viewBorder.backgroundColor = isHiddenBorder ? .clear : .white
     }
 }

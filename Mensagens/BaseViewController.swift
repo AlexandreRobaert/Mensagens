@@ -33,8 +33,8 @@ class BaseViewController: UIViewController {
         if let cor = mensagem.backgroudColor {
             tfMensagem.backgroundColor = cor
         }
-        if let cor = mensagem.borderColor {
-            viewBorder.backgroundColor = cor
+        if let cor = mensagem.viewColorBackground {
+            view.backgroundColor = cor
         }
     }
     
